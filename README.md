@@ -25,9 +25,7 @@ It can answer questions about the uploaded codebase using a local LLM and vector
 📁 Place your model in the `/model` directory  
 📁 Vector DB gets stored in `/research/faiss_index`
 
----
 
-## ✅ Example GitHub Repo
 
 
 ---
