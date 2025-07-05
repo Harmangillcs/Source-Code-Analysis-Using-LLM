@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🔍 AI Code Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 AI-Powered Source Code Analyzer</h1>
+
+    <!-- GitHub Repo Input -->
+    <div class="input-section">
+      <input type="text" id="urlInput" placeholder="Enter GitHub Repo URL (e.g. https://github.com/user/repo)">
+      <button id="analyzeButton">Analyze Repository</button>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p>Cloning and indexing repository, please wait...</p>
+    </div>
+
+    <!-- Error Display -->
+    <div id="errorMessage" class="hidden error"></div>
+
+    <!-- Chat Section -->
+    <div id="chatSection" class="hidden">
+      <h2>💬 Ask Questions from the Codebase</h2>
+      <div id="chatWindow"></div>
+      <input type="text" id="chatInput" placeholder="Ask something about the code...">
+      <button id="sendButton">Send</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

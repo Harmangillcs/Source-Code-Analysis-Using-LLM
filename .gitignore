@@ -205,3 +205,29 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Ignore vectorstore index files
+faiss_index/
+*.faiss
+*.pkl
+
+# Ignore local model binaries
+model/
+*.bin
+*.gguf
+
+# Ignore runtime clones and artifacts
+repo/
+research/
+
+# Logs
+*.log
+*.txt
+
+# Prevent secrets if any .env file exists
+.env
+.env.*
+
+# For Streamlit or frontend cache
+.streamlit/
